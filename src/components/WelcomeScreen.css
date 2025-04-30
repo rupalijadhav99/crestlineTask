@@ -186,7 +186,7 @@ body {
   
   .bottom-links span {
     position: relative;
-    padding-bottom: 5px;  /* Adjust the gap between the text and underline */
+    padding-bottom: 5px;  
   }
   
   .bottom-links span::after {
@@ -195,8 +195,8 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    height: 1px;  /* Adjust the thickness of the underline */
-    background-color: white;  /* Set the color of the underline */
+    height: 1px;  
+    background-color: white;  
   }
   
   
@@ -209,8 +209,8 @@ body {
     top: -5px;
     left: 7rem;
     background: linear-gradient(180deg, #2767b9 40%, #0A1B30 100%);
-    z-index: 0;  /* Ensure the circle is behind the card */
-    opacity: 0.6; /* Faded effect */
+    z-index: 0; 
+    opacity: 0.6; 
   }
   
   .bottom-circle {
@@ -223,5 +223,72 @@ body {
     background: linear-gradient(180deg, #2767b9 20%, #0A1B30 80%);
     z-index: 0;
     opacity: 0.6;
+  }
+  
+  /* Responsive layout for mobile */
+  @media screen and (max-width: 768px) {
+    .content-wrapper {
+      flex-direction: column;
+      padding: 20px 10px;
+    }
+  
+    .left-section {
+        justify-content: center;
+        padding: 20px 10px;
+        text-align: center;
+        height: 40vh; 
+      }
+  
+    .welcome-text {
+      font-size: 2.5rem;
+    }
+  
+    .dash {
+      font-size: 1rem;
+      left: 0;
+      top: 5px;
+    }
+  
+    .right-section {
+      justify-content: center;
+      margin-top: 20px;
+    }
+  
+    .card {
+      position: relative;
+      width: 100%;
+      max-width: 320px;
+      margin: 0 auto;
+      right: 0;
+    }
+  
+    .top-circle {
+      width: 80px;
+      height: 80px;
+      top: -20px;
+      left: 20px;
+      opacity: 0.5;
+    }
+  
+    .bottom-circle {
+      width: 60px;
+      height: 60px;
+      bottom: -10px;
+      right: 20px;
+      opacity: 0.5;
+    }
+  
+    .footer-links {
+      justify-content: center;
+      gap: 20px;
+      margin-top: 10px;
+    }
+  
+    .bottom-links {
+      position: static;
+      transform: none;
+      justify-content: center;
+      margin-top: 20px;
+    }
   }
   
