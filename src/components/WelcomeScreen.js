@@ -27,7 +27,7 @@ export default function WelcomeScreen() {
 
               <div className="option-box purple">
                 <div className="option-content">
-                    <img className="icon-box" src= {individual}/>
+                    <img className="icon-box" src= {individual} alt="individual"/>
                   <div className="option-text">
                     <p className="option-title">Individual</p>
                     <p className="option-description">
@@ -40,7 +40,7 @@ export default function WelcomeScreen() {
 
               <div className="option-box blue">
                 <div className="option-content">
-                  <img className="icon-box" src= {business}/>
+                  <img className="icon-box" src= {business} alt="business"/>
                   <div className="option-text">
                     <p className="option-title">Business</p>
                     <p className="option-description">
