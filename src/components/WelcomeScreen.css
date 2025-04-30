@@ -1,0 +1,227 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #1e1e1e; /* Gray background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  #root{
+    height: 85%;
+    width: 85%;
+  }
+
+  .App{
+    height: 100%;
+  }
+  
+  .welcome-container {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    background-color: #000; /* Black container background */
+    color: #fff;
+    overflow: hidden;
+    border-radius: 12px;
+    box-sizing: border-box;
+    position: relative;
+  }
+  
+  
+  /* New Flex Layout */
+  .content-wrapper {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    position: relative;
+  }
+  
+  .left-section {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding: 40px 20px 40px 40px;;
+  }
+  
+  .right-section {
+    flex: 1;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .welcome-text {
+    font-size: 5rem;
+    font-weight: 600;
+    color: white;
+  }
+  
+  .dots {
+    color: white;
+    font-weight: normal;
+  }
+
+  .dash{
+    color: rgb(53, 52, 52);
+    font-weight: 200;
+    font-size: 1.5rem;
+    top: 16px;
+    position: relative;
+    left: 1rem;
+  }
+
+  .card {
+    background: linear-gradient(
+      to bottom,
+      rgba(23, 20, 20, 0.4),  
+      rgba(23, 22, 22, 0.8), 
+      rgba(23, 22, 22, 0.7)    
+    );
+    border-radius: 10px;
+    border: 1px solid #929292;
+    width: 290px;
+    padding: 18px 15px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+    z-index: 2;
+    position: absolute;
+    right: 3.5rem;
+  }
+
+  .card-content-div{
+    background-color: #151414;
+  }
+  
+  .card-title {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .card-description {
+    font-size: 11px;
+    color: white;
+    margin-bottom: 20px;
+  }
+  
+  .option-box {
+    border-radius: 10px;
+    padding: 12px;
+    margin-bottom: 16px;
+    cursor: pointer;
+    color: white;
+    transition: transform 0.2s ease;
+  }
+  
+  .option-box:hover {
+    transform: scale(1.02);
+  }
+  
+  .purple {
+    background: linear-gradient(90deg, #416db7, #5d0fb0);
+  }
+  
+  .blue {
+    background: linear-gradient(90deg, #315697, #08214f);
+  }
+  
+  .option-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .icon-box {
+    border-radius: 6px;
+    margin-right: 8px;
+    height: 40px;
+    width: 40px;
+  }
+  
+  .option-text {
+    flex-grow: 1;
+    padding: 0 5px;
+  }
+  
+  .option-title {
+    font-size: 11px;
+    font-weight: 600;
+    margin: 0;
+  }
+  
+  .option-description {
+    font-size: 10px;
+    color: #eee;
+    margin: 2px 0 0 0;
+  }
+  
+  .arrow {
+    font-size: 15px;
+    color: #fff;
+  }
+  
+  .footer-links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    font-size: 10px;
+    color: white;
+  }
+  
+  .bottom-links {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 10px;
+    display: flex;
+    gap: 12px;
+  }
+  
+  .bottom-links span {
+    position: relative;
+    padding-bottom: 5px;  /* Adjust the gap between the text and underline */
+  }
+  
+  .bottom-links span::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 1px;  /* Adjust the thickness of the underline */
+    background-color: white;  /* Set the color of the underline */
+  }
+  
+  
+  /* Background Circles */
+  .top-circle {
+    position: absolute;
+    border-radius: 50%;
+    width: 115px;
+    height: 115px;
+    top: -5px;
+    left: 7rem;
+    background: linear-gradient(180deg, #2767b9 40%, #0A1B30 100%);
+    z-index: 0;  /* Ensure the circle is behind the card */
+    opacity: 0.6; /* Faded effect */
+  }
+  
+  .bottom-circle {
+    position: absolute;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    bottom: 10px;
+    right: 10px;
+    background: linear-gradient(180deg, #2767b9 20%, #0A1B30 80%);
+    z-index: 0;
+    opacity: 0.6;
+  }
+  
